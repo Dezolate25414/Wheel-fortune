@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>wheel-fortune - npm</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <style>
-    
-  </style>
-</head>
-<body>
-
-<div class="wheel">
-  <div class="wheel__segments"></div>
-  <div class="wheel__decor"></div>
-  <div class="wheel__button"></div>
-</div>
-
-<div class="form-container">
-  <input type="text" id="telegramTag" placeholder="Ваш Telegram тег">
-  <button id="claimPrize">Получить приз</button>
-</div>
-<script type="module" src="./script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheel of Fortune</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <canvas id="wheel" width="500" height="500"></canvas>
+      <div id="spin">Крути!</div>
+    </div>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
